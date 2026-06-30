@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+
+:root {
+  --ghp-primary: #81a521;
+  --ghp-secondary: #355e1a;
+  --ghp-accent: #8c644b;
+  --ghp-background: #FCFAF7; /* Warm soft background cream */
+  --ghp-text-primary: #1C2417; /* Warm charcoal-green */
+  --ghp-text-secondary: #586152;
+  --ghp-neutral-peach: #eec29d;
+}
+
+@theme {
+  --color-primary: var(--ghp-primary);
+  --color-primary-light: #9dbb41;
+  --color-primary-dark: var(--ghp-secondary);
+  --color-primary-hover: #72921b;
+  
+  --color-secondary-cream: var(--ghp-background);
+  --color-secondary-beige: #FAF4ED; /* Soft peach-beige tint */
+  --color-secondary-sand: #F2E3D5; /* Peach-sand highlight */
+  --color-secondary-clay: var(--ghp-accent);
+  
+  --color-accent-terracotta: var(--ghp-accent);
+  --color-accent-amber: var(--ghp-neutral-peach);
+  
+  --color-charcoal: var(--ghp-text-primary);
+  --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  --font-display: 'Outfit', system-ui, -apple-system, sans-serif;
+}
+
+body {
+  background-color: var(--color-secondary-cream);
+  color: var(--color-charcoal);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Soft custom scrollbar to match the caregiver vibe */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-secondary-cream);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-secondary-sand);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-secondary-clay);
+}
